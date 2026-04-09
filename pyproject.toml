@@ -1,0 +1,29 @@
+[project]
+name = "series-eco"
+version = "0.1.0"
+description = "Companion didático de séries temporais econômicas (Nielsen) aplicado ao IPCA e variáveis macro brasileiras"
+readme = "README.md"
+authors = [
+    { name = "Flávio Milan", email = "oflaviomilan@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pyarrow>=24.0.0",
+    "python-bcb>=0.3.6",
+    "scikit-learn>=1.9.0",
+    "statsmodels>=0.14.6",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.12,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.2.0",
+    "jupyterlab>=4.5.8",
+    "pytest>=9.0.3",
+]
